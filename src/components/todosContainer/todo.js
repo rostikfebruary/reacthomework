@@ -1,0 +1,17 @@
+import css from './todos.module.css'
+
+const Todo = ({todo}) => {
+    const {userId, id, title, completed} = todo
+    console.log(todo)
+    return (
+        <div className={css.Todos}>
+            <div>userId: {userId}</div>
+            <div>id: {id}</div>
+            <div>title: {title}</div>
+            <div>completed: {completed}</div>
+
+        </div>
+    );
+};
+
+export {Todo};
