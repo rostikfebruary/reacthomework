@@ -4,7 +4,9 @@ const todos = '/todos';
 
 const comments = '/comments';
 
-const albums = '/albums'
+const albums = '/albums';
+
+const posts = '/posts'
 
 const urls = {
     todos: {
@@ -14,12 +16,19 @@ const urls = {
 
     comments: {
         base: comments,
-        byId: (id) => `${comments}/${id}`
+        byId: (id) => `${comments}/${id}`,
+
     },
 
     albums: {
         base: albums,
         byId: (id) => `${albums}/${id}`
+    },
+
+    posts:{
+        base:posts,
+        byId:(id) => `${posts}/${id}`,
+
     }
 }
 
